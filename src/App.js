@@ -10,40 +10,23 @@ function App() {
         <Navbar/>
       </div>
 
-     {/* <div className = "bg-dark">
-      <div className = "bg-dark d-inline-block" >
-          <Photo/>
-        </div>
-
-        <div className = "rounded d-inline-block bg-white sticky-top" style = {{width: "50%"}} >
-          <h1>About Me</h1>
-          <hr></hr>
-        </div>
-      </div>  */}
-
       <div className = "bg-dark">
         <div className = "container">
           <div className = "row">
-            <div className = "col-sm">
+            <div className = "mr-5 mb-3">
               <div className = "bg-dark d-inline-block" >
                 <Photo/>
               </div>
             </div>
-
-            <div className = "col-sm bg-white rounded m-4">
-              <Aboutme/>
-            </div>  
+            
+            <Aboutme/>
+             
           </div>
         </div>
       </div>
 
     </>
-
-
   );
 }
 
 export default App;
-
-// width={64}
-//       height={64} d-inline-block 
