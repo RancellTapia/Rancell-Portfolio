@@ -8,7 +8,7 @@ const Aboutme = () => {
                 <h1 className = "display-3 d-inline-block mt-2"><b> Me</b></h1>
                 <hr className = "bg-black"/>
 
-                <h5 className = "text-justify">My name is Rancell Tapia.</h5>
+                <h5 className = "text-justify">My name is Rancell Tapia</h5>
             </div>
         </div>
 
