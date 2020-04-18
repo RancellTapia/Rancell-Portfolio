@@ -72,7 +72,6 @@
         justify-self: end;
         padding-right: 10px;
     }
-    
     .container2 {
         display: grid;
         grid-template-columns: 1fr;
