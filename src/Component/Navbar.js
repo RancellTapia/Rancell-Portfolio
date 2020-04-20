@@ -9,7 +9,7 @@ const Navbar = () => {
                 className = "navbar navbar-expand-lg navbar-light bg-dark"
             >
             <a 
-                className = "navbar-brand" 
+                className = "navbar-brand nv1" 
                 href = "#"
             >About Me</a>
             <button 
@@ -31,13 +31,13 @@ const Navbar = () => {
             >
                 <ul className = "navbar-nav">
                 <li className = "nav-item active">
-                    <a className = "nav-link" href ="#">Contact <span className="sr-only">(current)</span></a>
+                    <a className = "nav-link nv2" href ="#">Contact <span className="sr-only">(current)</span></a>
                 </li>
                 <li className = "nav-item">
-                    <a className = "nav-link" href="#">Stack</a>
+                    <a className = "nav-link nv3" href="#">Stack</a>
                 </li>
                 <li className = "nav-item">
-                    <a className = "nav-link" href="#">Pricing</a>
+                    <a className = "nav-link nv4" href="#">Pricing</a>
                 </li>
                 </ul>
             </div>
