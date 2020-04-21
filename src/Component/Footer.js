@@ -26,9 +26,9 @@ const Footer = () => {
                 <div className="f1">
                 <h3 className = "f1 mt-2"> Copyrigh &copy; 2020 - All Righ Reserved. </h3>
                     
-                    <a className = "m-2 mt-3 tw lc" href = "#">
-                        <GoLocation/> 
-                        <h6 className = "mr-3 ">&nbsp; Naples, Florida, EE.UU</h6>
+                    <a className = "m-2 mt-2 lc" href = "#">
+                       <div className = "lc1 lcc"><GoLocation/> </div> 
+                       <div > <h6 className = "mr-3 "> Naples, Florida, EE.UU</h6> </div>
                     </a>
 
                    
