@@ -1,8 +1,10 @@
 import React from 'react';
+import Photo from './Photo';
 
 const Aboutme = () => {
     return (
-
+        <>
+        <Photo/>
         <div className="uno">
             <div className = " bg-white rounded mt-4 ml-3 uno1">
                 <div className = "text-center">
@@ -18,8 +20,7 @@ const Aboutme = () => {
         </div>
 
         </div>
-
-       
+        </>  
       );
 }
  
