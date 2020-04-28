@@ -10,7 +10,7 @@ import Contact from "../src/Component/Contact";
 
 function App() {
 
-  const [ componentName, setComponentName ] = useState('about');
+  const [ componentName, setComponentName ] = useState('contact');
 
   console.log(componentName);
 
@@ -30,6 +30,9 @@ function App() {
         <div className="container2 bg-dark">
        
           { componentName  === "about" && <Aboutme />}
+          { componentName  === "contact" && <Contact />}
+          { componentName  === "stack" && <Aboutme />}
+          { componentName  === "pricing" && <Aboutme />}
 
         </div>
 
