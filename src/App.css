@@ -4,25 +4,6 @@
     grid-auto-rows: minmax(auto, 60px);
 }
 
-.nv1 {
-    font-size: 30px;
-}
-
-.nv2 {
-    font-size: 28px;
-    margin-top: 2px;
-}
-
-.nv3 {
-    font-size: 26px;
-    margin-top: 4px;
-}
-
-.nv4 {
-    font-size: 24px;
-    margin-top: 6px;
-}
-
 .net {
     justify-self: end;
     padding-right: 10px;
@@ -32,6 +13,9 @@ body {
     background-color: #343a40;
 }
 
+.test{
+    border: solid yellow;
+}
 
 
 .in {
@@ -158,6 +142,10 @@ a{
     cursor: pointer;
 }
 
+.image{
+    width: 520px;
+    height: auto;
+}
 @media screen and (max-width: 2000px){
 
     .img{
