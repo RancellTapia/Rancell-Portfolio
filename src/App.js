@@ -30,15 +30,11 @@ function App() {
         <Navbar 
             setComponentName = {setComponentName}
           />
-     
 
-
-       
-          { componentName  === "about" && <Aboutme />}
-          { componentName  === "contact" && <Contact />}
-          { componentName  === "stack" && <Aboutme />}
-          { componentName  === "pricing" && <Aboutme />}
-
+        { componentName  === "about" && <Aboutme />}
+        { componentName  === "contact" && <Contact />}
+        { componentName  === "stack" && <Aboutme />}
+        { componentName  === "pricing" && <Aboutme />}
 
         <Footer />
       </>

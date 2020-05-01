@@ -1,7 +1,15 @@
-.container1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(auto, 60px);
+
+.font-title{
+    font-size: 60px;
+    font-family: 'Play', sans-serif;
+}
+
+.font-body{
+    font-size: 20px;
+    font-family: 'Noticia Text', serif;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 40px;
 }
 
 .net {
@@ -12,11 +20,6 @@
 body {
     background-color: #343a40;
 }
-
-.test{
-    border: solid yellow;
-}
-
 
 .in {
     color: rgb(255, 255, 255);
@@ -86,11 +89,7 @@ body {
  
  }
 
- h6{
-    font-size: 18px;
-    font-weight: 100;
-    color: white;
- }
+
 
 .ft0 {
     margin-top: -190px;
@@ -117,13 +116,10 @@ body {
 }
 
 .ft5 {
-    margin-top: 290px;
+    margin-top: 70px;
 }
 
-h4 {
-    font-weight: 300;
-    font-size: 30px;
-}
+
 
 .lc{
     justify-content: center;
