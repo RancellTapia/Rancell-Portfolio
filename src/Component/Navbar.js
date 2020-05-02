@@ -53,7 +53,7 @@ const Navbar = ({setComponentName}) => {
         // </div>
 
         <div className = "container">
-            <div className = "bg-white">
+            <div className = "bg-white ml-0">
                 <div className = "bg-dark">
                     <nav 
                         className = "navbar  navbar-light"
