@@ -5,11 +5,10 @@ const Photo = () => {
     return ( 
        
         //Foto de about
-        <div className = " col-md-6 mt-4 ml-2 bg-dark" >
+        <div className = "  mt-4  bg-dark" >
             <img src = {pic} 
-                className = "img-responsive rounded border border-white"
-                style = {{width: "520px"}}
-                alt = "Responsive image"
+                className = "rounded border border-white image"
+                alt = ""
             />  
         </div>
      );

@@ -9,10 +9,7 @@ import Contact from "../src/Component/Contact";
 
 function App() {
 
-  const [ componentName, setComponentName ] = useState('about');
-
-  console.log(componentName);
-
+  const [ componentName, setComponentName ] = useState('contact');
   
   return (
 
