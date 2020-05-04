@@ -1,7 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
 import letters from './letters.jpg';
+import {sendMessage} from '../service/contact.service';
 
 const Contact = () => {
+
+    const [message, setMessage] = useState({
+        'name': '',
+        'email': '',
+        'mail': '' 
+    
+        });
+
+    const onSubmitMessage = async (e) => {
+        e.preventDefault();
+
+        try {
+          const {data} = await sendMessage(message)
+          window.alert("the message was successfully sent")
+
+        } catch (error) {
+            
+            console.log(error);
+        }
+        
+    }
+
+    const handleInputOnchange = event => {
+        setMessage({
+           ...message,
+           [event.target.name]:event.target.value
+        })
+    }
+
     return ( 
 
         <div className = "container">
@@ -20,16 +50,21 @@ const Contact = () => {
                             <h1 className = " ml-3 mt-4 font-title"> Contact us </h1>
                             <hr className = "bg-black"/>
 
-                            <form>
+                            <form
+                                onSubmit = {onSubmitMessage}
+                            >
                                 <div className = "container">
                                     <div className = "form-group">
                                         <label className = "font-body">Full Name</label>
                                         <input 
-                                            type = "name" 
                                             className = "form-control" 
                                             id = "name" 
                                             placeholder = "Your Full Name"
                                             style = {{width: "40%"}}
+                                            value = {message.name}
+                                            name = "name"
+                                            onChange={handleInputOnchange}
+                                            required
                                         />
                                     </div>
 
@@ -41,15 +76,27 @@ const Contact = () => {
                                             id = "email"
                                             placeholder = "name@example.com"
                                             style = {{width: "40%"}}
+                                            value = {message.email}
+                                            name = "email"
+                                            onChange={handleInputOnchange}
+                                            required
                                         />
                                     </div>
 
                                     <div className = "form-group">
-                                        <textarea className = "form-control" rows = "5" placeholder = "Your message"/>
+                                        <textarea 
+                                            className = "form-control" 
+                                            rows = "5" 
+                                            placeholder = "Your message"
+                                            value = {message.mail}
+                                            name = "mail"
+                                            onChange={handleInputOnchange}
+                                            required
+                                        />
                                     </div>
 
                                     <div className = "form-group">
-                                        <button type="button" class="btn btn-primary">Send Email</button>  
+                                        <button type="submit" className="btn btn-primary">Send Email</button>  
                                     </div>
 
                                     <hr/>
